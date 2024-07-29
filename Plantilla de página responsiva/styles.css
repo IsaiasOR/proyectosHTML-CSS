@@ -1,0 +1,112 @@
+* {
+  /* Para eliminar los margenes por defecto */
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: lightgray;
+}
+
+li {
+  color: rgb(56, 56, 56);
+  padding: 0.3rem 0.7rem;
+}
+
+li:hover {
+  background-color: rgb(56, 56, 56);
+  color: white;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+aside {
+  background-color: lightblue
+}
+
+main {
+  background-color: lightsalmon;
+}
+
+footer {
+  background-color: lightgreen;
+  font-size: small;
+}
+
+.contenedor-generico {
+  display: flex;
+  flex-direction: column;
+  /* Cubrirá el 100% de la altura de la pantalla */
+  height: 100vh;
+}
+
+.contenedor-central {
+  display: flex;
+  flex: 1;
+}
+
+.contenedor-central>aside {
+  flex-basis: 30rem;
+}
+
+/* Utilizando grid */
+.contenedor-articulos {
+  display: grid;
+  /* Especificamos las comlumnas que queremos tener */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.contenedor-articulos>* {
+  background-color: white;
+  
+}
+
+@media (width < 1024px) {
+  li {
+    flex-grow: 1;
+  }
+
+  .contenedor-articulos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (width < 480px) {
+  ul {
+    flex-direction: column;
+  }
+
+  .contenedor-central {
+    flex-direction: column;
+  }
+
+  .contenedor-central>aside {
+    flex-basis: auto;
+  }
+
+  .contenedor-central>main {
+    flex-grow: 1;
+  }
+
+  .contenedor-articulos {
+    grid-template-columns: 1fr;
+  }
+}
