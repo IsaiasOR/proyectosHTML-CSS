@@ -1,0 +1,18 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    gap: 10px; /* Para agregar espacio entre las filas y las columnas */
+    /* grid-template-rows: 50px 50px 50px; */
+    /* grid-auto-rows: 500px; */
+    justify-items: center;
+    align-items: center;
+    height: 500px;
+}
+
+.grid-container .imagen img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho de su contenedor */
+    max-height: 100%; /* Asegura que la imagen no exceda la altura de su contenedor */
+    object-fit: cover; /* Escala la imagen para cubrir el área del contenedor */
+    width: auto;
+    height: auto;
+}
