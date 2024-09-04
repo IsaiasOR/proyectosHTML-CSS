@@ -1,0 +1,19 @@
+@media (max-width: 576px) {
+    body {
+        background-color: #fff;
+    }
+
+    p {
+        font-family: fantasy;
+    }
+}
+
+@media (min-width: 576px) {
+    body {
+        background-color: #74972c;
+    }
+
+    p {
+        font-family: monospace;
+    }
+}

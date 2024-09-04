@@ -1,0 +1,30 @@
+.btn {
+    background-color: blue;
+    color: white;
+    width: 100px;
+    height: 50px;
+    border: solid 1px;
+    cursor: pointer;
+}
+
+@media (max-width: 576px) {
+    .btn {
+        background-color: #ff0800;
+    }
+
+    .parrafo {
+        display: none;
+    }
+}
+
+@media (min-width: 720px) {
+    .btn {
+        background-color: #027612;
+    }
+}   
+
+@media (min-width: 940px) {
+    .btn {
+        background-color: #9a0064;
+    }
+}

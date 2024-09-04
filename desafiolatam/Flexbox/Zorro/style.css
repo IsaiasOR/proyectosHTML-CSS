@@ -5,7 +5,7 @@ body {
 
 .hero {
     display: flex;
-    background-image: url("/desafiolatam/Zorro.jpg");
+    background-image: url("/desafiolatam/Zorro/Zorro.jpg");
     color: #fff;
     align-items: flex-end;
     justify-content: center;
